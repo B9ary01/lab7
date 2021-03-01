@@ -1,0 +1,24 @@
+<!doctype html> 
+<html> 
+	<head>    
+ <title>Listusers webpage</title>
+     </head> 
+ 
+ <a href="https://www.doc.gold.ac.uk/usr/397/ ">Home</a><br>
+
+ <h1> This is List Users Page </h1>
+<body>
+
+<h3>You can see username of all users here:</h3>
+
+<ul>
+
+<% availableusers.forEach(function(users){ %>
+<li>Username: <%= users.username %>
+</li>
+<% }) %> 
+</ul> 
+
+</body>
+
+</html>

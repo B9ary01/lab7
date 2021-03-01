@@ -1,0 +1,13 @@
+
+<!doctype html> <html>   <head>   
+<title>List  webpage!</title>   </head>
+<a href="https://www.doc.gold.ac.uk/usr/397/ ">Home</a><br>
+ <h1> This is List Page </h1>   
+<body>
+<h3>You can see names and prices of all available books at our book shop here:</h3> 
+<ul>
+<% availablebooks.forEach(function(book){ %>
+<li><%= book.name %>, £<%= book.price %></li>
+<% }) %>             </ul>
+</body>
+</html>

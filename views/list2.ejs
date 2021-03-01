@@ -1,0 +1,15 @@
+
+<!doctype html> <html>   <head>    
+ <title>Registered users webpage!</title>
+</head> 
+<a href="https://www.doc.gold.ac.uk/usr/397/ ">Home</a><br>
+<h1> This is Registered Users Page </h1>
+<body>
+<h3>You can see username and password of all registered users   here:</h3> 
+<ul>
+<% availableusers.forEach(function(users){ %>
+<li>Username: <%= users.username %>,  Password:  <%= users.password %>, Email:  <%=users.email %>
+</li> <% }) %> 
+</ul> 
+</body>
+</html>
